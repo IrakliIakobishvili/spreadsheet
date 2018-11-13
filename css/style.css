@@ -1,0 +1,132 @@
+body,section,article,main,header,aside,div,span,p,h1,h2,h3,a,ul,li,table,tr,td,th {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mainHeader {
+    width: 100%;
+    height: 80px;
+    background: #6200ee;
+}
+.mainHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+.logo {
+    color: #fff;
+}
+.addStudentBtn, .removeStudentBtn {
+    padding: 10px;
+    margin: 0px 5px;
+    cursor: pointer;
+    background-color: #03A9F4;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+
+.mainSection {
+    display: flex;
+    background-color: orange;
+    height: calc(100vh - 80px);
+    /* min-width: 800px; */
+}
+.leftSidebar {
+    width: 300px;
+    background: #1e2024;
+    padding: 10px;
+    color: #d2d2d3;
+    font-size: 13px;
+}
+.leftSidebar__list__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.mainContent {
+    width: calc(100% - 300px);
+    background: #fff;
+    overflow: auto;
+    padding: 20px;
+    /* display: flex; */
+}
+.mainContent__table {
+    width: 100%;
+    /* background: red; */
+    /* display: flex; */
+    text-align: center;
+    border-collapse: collapse;
+}
+.mainContent__table tr td:first-child, .mainContent__table tr th:first-child {
+    text-align: left;
+    padding: 0px 10px;
+    width: 150px;
+    position: relative;
+    padding-left: 25px;
+}
+.removeBtn {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background: none;
+}
+.studentsIndex {
+    position: absolute;
+    font-size: 13px;
+    left: 0px;
+    width: 20px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: orange; */
+    color: #ffa500;
+}
+.removeBtn i {
+    color: rgb(52, 150, 52);
+}
+.removeBtn i:hover {
+    color: rgb(79, 182, 79);
+}
+.mainContent__table tr th, .mainContent__table tr td {
+    border: 1px solid #000;
+    position: relative;
+}
+.mainContent__table tr td span {
+    position: absolute;
+    /* background: red; */
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainContent__table__heading th {
+    background: orange;
+    height: 45px;
+    width: 100px;
+}
+.mainContent__table__studentList td {
+    height: 40px;
+    /* background: purple; */
+}
