@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Teacher's book</title>
+</head>
+<body>
+    <header class="mainHeader">
+        <div>
+            <a href=""><h1 class="logo">TechHub</h1></a>
+        </div>
+        <div>
+            <button class="addStudentBtn" id="addStudentBtn">Add student</button>
+            <button class="removeStudentBtn" id="removeStudentBtn">Remove students</button>
+        </div>
+    </header><!--mainHeader-->
+    <section class="mainSection">
+        <aside class="leftSidebar">
+            <ul class="leftSidebar__list">
+                <li class="leftSidebar__list__item">Total students <span id="totalStudent"></span></li>
+                <li class="leftSidebar__list__item">Average score <span id="showAverageScore"></span></li>
+                <li class="leftSidebar__list__item">Higest score student <span id="higestScoreStudent"></span></li>
+            </ul>
+        </aside><!--leftSidebar-->
+        <main class="mainContent">
+            <table class="mainContent__table">
+                <tbody class="mainContent__table__heading">
+                    <tr>
+                        <th>Full name</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </tbody>
+                <tbody class="mainContent__table__studentList" id="studentListTbody">
+                    <!-- <tr>
+                        <td>irakli <button class="removeBtn">del</button></td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>irakli <button class="removeBtn">del</button></td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>irakli <button class="removeBtn">del</button></td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                    </tr> -->
+                </tbody>
+            </table><!--mainContent__table-->
+        </main><!--mainContent-->
+    </section><!--mainSection-->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
