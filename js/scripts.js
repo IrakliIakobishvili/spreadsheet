@@ -113,7 +113,8 @@ const Spreadsheet = {
                     (enteredScore > 5) ? enteredScore = 5 : (enteredScore < 0) ? enteredScore = 0 : true;
                     let color;
                     (enteredScore < 4 && enteredScore > -Infinity) ? color = "red" : (enteredScore == 4) ? color = "tomato" : (enteredScore > 4) ? color = "green" : true;
-                    enteredScore = Number(enteredScore);
+                    //enteredScore = Number(enteredScore);
+                    enteredScore = Math.round(Number(enteredScore));
                     let x = Number(this.parentNode.getAttribute("data-x"));
                     let y = Number(this.parentNode.getAttribute("data-y"));
                     let score = new Spreadsheet.Score(enteredScore,x,y,color);
