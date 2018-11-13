@@ -17,6 +17,7 @@ body,section,article,main,header,aside,div,span,p,h1,h2,h3,a,ul,li,table,tr,td,t
     align-items: center;
     justify-content: space-between;
     padding: 0px 10px;
+    padding-right: 17px;
 }
 .logo {
     color: #fff;
